@@ -10,12 +10,12 @@
         <Border Margin=" 8" BorderThickness="1" BorderBrush="LightGray">
             <StackPanel Margin="8">
                 <Label Content=" peso en Kilogramos"/>
-                <TextBlock x:Name="pesoTextBox" Margin="4"    />
+                <TextBox x:Name="pesoTextBox"    />
                 <Label Content="Estatura en metros"/>
-                <TextBlock x:Name="estaturaTextBox" Margin="4" />
+                <TextBox x:Name="estaturaTextBox" Margin="4" />
                 <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
-                    <Button x:Name="calcularButton" Content="calcular" Margin="4" MinWidth="80"/>
-                    <Button x:Name="limpiarButton" Content="limpiar" Margin="4" MinWidth="80" />
+                    <Button x:Name="calcularButton" Content="calcular" Margin="4" MinWidth="80" Click="calcularButton_Click" />
+                    <Button x:Name="limpiarButton" Content="limpiar" Margin="4" MinWidth="80" Click="limpiarButton_Click" />
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -31,8 +31,7 @@
 
             </StackPanel>
         </GroupBox>
-        <Button x:Name="salirButton" Content="salir" HorizontalAlignment="Center" Margin="8" MinWidth="100"/>
-
+        <Button x:Name="salirButton" Content="salir" HorizontalAlignment="Center" Margin="8" MinWidth="100" Click="salirButton_Click"/>
 
 
 
